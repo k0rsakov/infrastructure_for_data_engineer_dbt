@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fct_registred_by_date
+    description: "Количество регистраций за день"
+    columns:
+      - name: registred_date
+        description: "Дата регистрации"
+      - name: count
+        description: "Количество регистраций"
