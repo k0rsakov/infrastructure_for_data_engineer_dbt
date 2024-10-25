@@ -1,0 +1,90 @@
+[tool.ruff.lint]
+select = ["A", "E", "I", "U", "B", "C", "D", "F", "G", "RUF100", "N",  "Q", "R", "S", "T",  "W", "COM"]
+ignore = [
+    # Multi-line docstring summary should start at the first line
+    "D212",
+    # No blank lines allowed after function docstring (found {num_lines})
+    "D202",
+    # Probable insecure usage of temporary file or directory: "{}"
+    "S108",
+    # Missing docstring in public module
+    "D100",
+    # Logging statement uses f-string
+    "G004",
+    # Possible SQL injection vector through string-based query construction
+    "S608",
+    # Checks for docstrings on class definitions that are not preceded by a blank line.
+    "D203",
+    # Checks for uses of the assert keyword.
+    "S101",
+    # Checks for module names that do not follow the snake_case naming convention or are otherwise invalid.
+    "N999",
+    # Checks for print statements.
+    "T201"
+]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff]
+# Same as Black.
+line-length = 120
+
+# Assume Python 3.12.
+target-version = "py312"
+
+[tool.poetry]
+name = "infrastructure_for_data_engineer_dbt"
+version = "0.0.1"
+description = ""
+authors = ["Ivan Korsakov <korsakov.iyu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.urls]
+"Homepage" = ""
+"Bug Tracker" = ""
+"PyPi" = ""
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.12.1"
+connectors-to-databases = "^1.1.8"
+ruff = "^0.7.1"
+
+[tool.poetry.group.dev.dependencies]
+python = "^3.12.1"
+connectors-to-databases = "^1.1.8"
+ruff = "^0.7.1"
