@@ -83,8 +83,12 @@ build-backend = "poetry.core.masonry.api"
 python = "^3.12.1"
 connectors-to-databases = "^1.1.8"
 ruff = "^0.7.1"
+dbt-core = "^1.8.8"
+dbt-postgres = "^1.8.2"
 
 [tool.poetry.group.dev.dependencies]
 python = "^3.12.1"
 connectors-to-databases = "^1.1.8"
 ruff = "^0.7.1"
+dbt-core = "^1.8.8"
+dbt-postgres = "^1.8.2"
