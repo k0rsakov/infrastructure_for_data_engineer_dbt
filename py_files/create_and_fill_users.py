@@ -19,6 +19,7 @@ pg.execute_script(
     (
         id uuid PRIMARY KEY,
         created_at timestamptz DEFAULT now(),
+        updated_at timestamptz DEFAULT now(),
         first_name varchar,
         last_name varchar,
         middle_name varchar,
@@ -30,10 +31,14 @@ pg.execute_script(
 )
 
 list_of_dict = []
-for _ in range(1000000):
+for _ in range(1000):
     dict_ = {
         "id": uuid.uuid4(),
         "created_at": fake.date_time_ad(
+            start_datetime=datetime.date(year=2024, month=1, day=1),
+            end_datetime=datetime.date(year=2025, month=1, day=1),
+        ),
+        "updated_at": fake.date_time_ad(
             start_datetime=datetime.date(year=2024, month=1, day=1),
             end_datetime=datetime.date(year=2025, month=1, day=1),
         ),
