@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: public
+    database: dbt
+    schema: public
+    tables:
+      - name: users

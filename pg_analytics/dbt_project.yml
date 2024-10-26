@@ -36,3 +36,5 @@ models:
       +materialized: view
     dm:
       +materialized: table
+    as_is:
+      +materialized: table
