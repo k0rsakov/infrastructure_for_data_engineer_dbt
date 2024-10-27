@@ -12,7 +12,7 @@ pg = PostgreSQL(
 fake = Faker(locale="ru_RU")
 
 list_of_dict = []
-for _ in range(3000):
+for _ in range(3210):
     dict_ = {
         "id": uuid.uuid4(),
         "created_at": fake.date_time_ad(

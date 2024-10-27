@@ -31,10 +31,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   pg_analytics:
-    # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
     dm:
       +materialized: table
+      tags: "marts"
     as_is:
       +materialized: table

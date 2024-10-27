@@ -31,7 +31,7 @@ pg.execute_script(
 )
 
 list_of_dict = []
-for _ in range(1000):
+for _ in range(1000000):
     dict_ = {
         "id": uuid.uuid4(),
         "created_at": fake.date_time_ad(
