@@ -1,0 +1,21 @@
+duckdb_analytics:
+  outputs:
+    dev:
+      type: duckdb
+      path: dev.duckdb
+      threads: 1
+      extensions:
+        - httpfs
+        - parquet
+        - postgres
+      postgres_scanner:
+        dbname: dbt
+        host: localhost
+        port: 5432
+        user: postgres
+        password: postgres
+    prod:
+      type: duckdb
+      path: prod.duckdb
+      threads: 4
+  target: dev

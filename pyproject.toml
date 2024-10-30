@@ -85,6 +85,7 @@ connectors-to-databases = "^1.1.8"
 ruff = "^0.7.1"
 dbt-core = "^1.8.8"
 dbt-postgres = "^1.8.2"
+dbt-duckdb = "^1.9.0"
 Faker = "^30.3.0"
 
 [tool.poetry.group.dev.dependencies]
@@ -93,4 +94,5 @@ connectors-to-databases = "^1.1.8"
 ruff = "^0.7.1"
 dbt-core = "^1.8.8"
 dbt-postgres = "^1.8.2"
+dbt-duckdb = "^1.9.0"
 Faker = "^30.3.0"
