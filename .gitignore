@@ -162,3 +162,4 @@ cython_debug/
 .idea/
 py_files/foo.py
 /duckdb_analytics/dev.duckdb
+data
