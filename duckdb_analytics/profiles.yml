@@ -8,4 +8,10 @@ duckdb_analytics:
         - httpfs
         - parquet
         - postgres
+      settings:
+        s3_access_key_id: "GYZDiyIV4wnNoNTzp2Q5"
+        s3_secret_access_key: "zHOERNJFxcBYXXsa4XUXXSSy0apl8OED7BVp1A3Q"
+        s3_endpoint: "localhost:9000"
+        s3_use_ssl: "FALSE"
+        s3_url_style: "path"
   target: dev

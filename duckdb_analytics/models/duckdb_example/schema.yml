@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: users_from_s3_extension
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null

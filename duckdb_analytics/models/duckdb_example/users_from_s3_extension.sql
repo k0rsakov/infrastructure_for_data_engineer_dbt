@@ -1,0 +1,1 @@
+SELECT * FROM read_parquet('s3://prod/ods/users.parquet')
