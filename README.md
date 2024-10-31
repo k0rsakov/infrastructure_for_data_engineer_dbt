@@ -1,6 +1,6 @@
 # Инфраструктура для Data-Engineer DBT
 
-Статья на [habr](https://habr.com/ru/articles/****/).
+Статья на [habr](https://habr.com/ru/articles/854990/).
 
 Настройка окружения:
 ```bash
